@@ -27,7 +27,6 @@ class Farm {
             if(butcher.canButcher( animals.get(i))) {
                 animals.remove(i);
             }
-
         }
     }
 
@@ -41,12 +40,11 @@ class Farm {
 
     public List<String> getStatus() {
         List<String > status = new ArrayList<>();
-        for(int i=0 ; i < animals.size() ;i ++){
 
+        for (int i=0 ; i < animals.size() ;i ++){
             String temp = "There is a " + animals.get(i).getSize() + " sized " + animals.get(i).toString()+ "in the farm.";
             status.add(temp);
         }
         return status;
     }
-
 }

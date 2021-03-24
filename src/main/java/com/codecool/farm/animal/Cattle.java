@@ -13,7 +13,6 @@ public class Cattle extends Animal {
     public void feed() {
         int previousSize = this.getSize();
         previousSize += 2;
-
         this.setSize(previousSize);
     }
 
